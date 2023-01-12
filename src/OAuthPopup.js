@@ -5,7 +5,7 @@ function OAuthPopup(){
   const oauthCode = queryParameters.get("code");
   window.opener.postMessage({
     type: 'oauth-code',
-    oauthCode
+    oauthCode: oauthCode
   })
 
   return(
